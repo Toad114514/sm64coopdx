@@ -26,7 +26,7 @@ DEVELOPMENT ?= 0
 TARGET_N64 = 0
 
 # Build and optimize for Raspberry Pi(s)
-TARGET_RPI ?= 0
+TARGET_RPI ?= 1
 
 # Build and optimize for RK3588 processor
 TARGET_RK3588 ?= 0
@@ -35,8 +35,8 @@ TARGET_RK3588 ?= 0
 OSX_BUILD ?= 0
 
 # Specify the target you are building for, TARGET_BITS=0 means native
-TARGET_ARCH ?= native
-TARGET_BITS ?= 0
+TARGET_ARCH ?= ARM
+TARGET_BITS ?= 64
 
 # Disable texture fixes by default (helps with them purists)
 TEXTURE_FIX ?= 0
